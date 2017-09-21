@@ -1,0 +1,7 @@
+{
+  "name": "D_Day",
+  "description": "D_Day",
+  "repository": "https://github.com/krishnakanththammana/D_Day",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
