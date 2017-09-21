@@ -1,9 +1,14 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="src/css/animate.css">
+    <link rel="stylesheet" href="src/css/styles.css">
   </head>
   <body>
-    D_Day
+    <div class="content">
+      <h1 class="animated tada">Today is NOT a Dry Day</h1>
+    </div>
     <script>
       if('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js').then(function() {
