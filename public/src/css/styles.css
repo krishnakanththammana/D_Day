@@ -7,13 +7,60 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
+  /* overflow: hidden; */
 }
 
 body .content {
   height: 100%;
   width: 100%;
+  position: relative;
+}
+
+body .content .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+  background-blend-mode: multiply,multiply;
+}
+
+body .content .main-content {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  overflow: auto;
+}
+
+body .content .main-content .select-date-box{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+input {
+  border-radius: 4px;
+  font-size: 1.4em;
+  padding: 16px;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 0 32px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 0 32px rgba(0,0,0,.1);
+  box-shadow: 0 0 32px rgba(0,0,0,.1);
+  font-family: 'Lobster', cursive;
+  position: relative;
+  z-index: 1;
 }

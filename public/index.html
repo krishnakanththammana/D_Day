@@ -2,12 +2,29 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="src/components/Datedropper3-master/datedropper.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="src/css/animate.css">
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/dday.css">
   </head>
   <body>
     <div class="content">
-      <h1 class="animated tada">Today is NOT a Dry Day</h1>
+      <!-- <h1 class="animated tada">Today is NOT a Dry Day</h1> -->
+      <div class="background">
+
+      </div>
+      <div class="main-content">
+        <div>
+           
+        </div>
+        <div id="result">
+          Its party time
+        </div>
+        <div class="select-date-box">
+          <input type="text" onchange="dateSelected()" name="" data-theme="dday" data-modal="true" data-translate-mode="true" data-large-mode="true" id="selectDate">
+        </div>
+      </div>
     </div>
     <script>
       if('serviceWorker' in navigator) {
@@ -16,5 +33,8 @@
         });
       }
     </script>
+    <script src="src/js/jquery-3.2.1.min.js"></script>
+    <script src="src/components/Datedropper3-master/datedropper.min.js"></script>
+    <script src="src/js/app.js"></script>
   </body>
 </html>

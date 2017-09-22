@@ -5,7 +5,16 @@ self.addEventListener('install', function(event) {
     .then(function(cache) {
       cache.addAll([
         '/',
-        '/index.html'
+        '/index.html',
+        '/src/css/animate.css',
+        '/src/js/jquery-3.2.1.min.js',
+        '/src/components/Datedropper3-master/datedropper.min.js',
+        '/src/components/Datedropper3-master/datedropper.min.css',
+        'https://fonts.googleapis.com/css?family=Lobster',
+        '/src/css/styles.css',
+        '/src/css/dday.css',
+        '/src/js/app.js',
+        '/src/images/party.png'
       ]);
     })
   );  
